@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas</title>
+    <link rel="stylesheet" href="UKL.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Kelas X RPL 1</div>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tugas">Info Tugas</a></li>
+            <li><a href="#struktur">Struktur Kelas</a></li>
+            <li><a href="#piket">Jadwal Piket</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <!-- Beranda -->
+        <section id="beranda">
+            <h1>Selamat Datang di Website Kelas</h1>
+            <p style="text-align: center;">Website ini berisi informasi tentang kelas kita</p>
+        </section>
+
+        <!-- Daftar Tugas -->
+        <section id="tugas">
+            <h2>Daftar Tugas Kelas</h2>
+            <div class="task-list">
+                <div class="task">
+                    <h3>Tugas 1. Matematika</h3>
+                    <p>mengerjakan tugas statistik </p>
+                </div>
+                <div class="task">
+                    <h3>Tugas 2.Bahasa Inggris</h3>
+                    <p>Membuat video Presentasi selama 5 menit</p>
+                </div>
+                <div class="task">
+                    <h3>Tugas 3. IPAS</h3>
+                    <p>Presentasi kelompok fisika </p>
+                </div>
+                <div class="task">
+                    <h3>Tugas 4. </h3>
+                    <p>Buat rangkuman materi dari buku</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Struktur Kelas -->
+        <section id="struktur">
+            <h2>Struktur Kelas</h2>
+            <div class="class-structure">
+                <div class="member">
+                    <h3>Ketua Kelas</h3>
+                    <p>Arageta 1</p>
+                </div>
+                <div class="member">
+                    <h3>Wakil Ketua</h3>
+                    <p>Arageta 2</p>
+                </div>
+                <div class="member">
+                    <h3>Sekretaris</h3>
+                    <p>Arageta 3</p>
+                </div>
+                <div class="member">
+                    <h3>Bendahara</h3>
+                    <p>Arageta 4</p>
+                </div>
+                <div class="member">
+                    <h3>Sie Acara</h3>
+                    <p>Arageta 5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jadwal Piket -->
+        <section id="piket">
+            <h2>Jadwal Piket</h2>
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Nama</th>
+                        <th>Tugas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>Arageta 1, Arageta 2</td>
+                        <td>Membersihkan papan tulis</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>Arageta 3, Arageta 4</td>
+                        <td>Menyapu lantai</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu</td>
+                        <td>Arageta 5, Arageta 6</td>
+                        <td>Membersihkan jendela</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis</td>
+                        <td>Arageta 7, Arageta 1</td>
+                        <td>Memeriksa kebersihan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Website resmi kelas X TKJ 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: kelasxtkj1@sekolah.sch.id</p>
+                <p>Telepon: (021) 1234567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2023 Kelas X TKJ 1. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu hamburger untuk mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
